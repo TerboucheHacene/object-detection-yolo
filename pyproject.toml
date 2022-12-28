@@ -1,0 +1,49 @@
+[tool.poetry]
+name = "object-detection-yolo"
+version = "0.1.0"
+description = ""
+authors = ["haceneterbouche <hacene.terbouche@gmail.com>"]
+readme = "README.md"
+packages = [{include = "object_detection_yolo"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+yolov5 = "^7.0.5"
+
+[tool.poetry.group.dev.dependencies]
+wandb = "^0.13.5"
+pre-commit = "^2.16.0"
+ipykernel = "^6.6.1"
+poethepoet = "^0.10.0"
+black = "^22.10.0"
+flake8 = "^4.0.1"
+isort = "^5.9.3"
+pytest = "^6.2.5"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+# Black formatter configuration
+line-length = 89
+target-version = ["py38"]
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | \.sublime-workspace
+  | .idea
+  | .venv
+  | .vscode
+  | _build
+  | buck-out
+  | build
+  | dist
+)/
+'''
