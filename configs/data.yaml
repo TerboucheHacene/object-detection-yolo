@@ -1,0 +1,10 @@
+names:
+- Ambulance
+- Bus
+- Car
+- Motorcycle
+- Truck
+nc: 5
+path: artifacts/vehicles_open_image
+train: artifacts/vehicles_open_image/train
+val: artifacts/vehicles_open_image/valid

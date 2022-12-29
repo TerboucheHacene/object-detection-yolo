@@ -222,7 +222,7 @@ python-versions = ">=3.6"
 name = "debugpy"
 version = "1.6.4"
 description = "An implementation of the Debug Adapter Protocol for Python"
-category = "dev"
+category = "main"
 optional = false
 python-versions = ">=3.7"
 
@@ -1723,7 +1723,7 @@ testing = ["flake8 (<5)", "func-timeout", "jaraco.functools", "jaraco.itertools"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "c6f587d2bb4d87c481cc0f357fe4098c760978a7f1b78839f4a16e389953ebe4"
+content-hash = "0bdf4f17b857ad075cda4bf8e6dffac863a142417170858685386a21dd66f6b3"
 
 [metadata.files]
 absl-py = [
